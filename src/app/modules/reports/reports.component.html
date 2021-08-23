@@ -1,0 +1,91 @@
+
+    <div class="header"  fxLayout="row" fxLayoutAlign="space-between center">
+        <h1>Reports</h1>
+        <mat-card fxLayout="row" fxLayoutAlign="space-between center" class="head-class">
+            <div class="circle"></div>
+            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Soufiane FADIL">
+            <mat-icon>expand_more</mat-icon>
+        </mat-card>
+    </div>
+<div class="temp">
+    <div class="row" fxLayoutAlign="space-between center" fxLayoutGap="10px" class="cards">
+        <div class="flexy">
+          <h4>Report Type</h4>
+            <div class="form"> 
+                <select >
+                  <option selected value="one">Gen Fuel Consumption</option>                
+                </select>
+              </div>
+        </div>
+        <div class="flexy">
+            <h4>Date From</h4>
+            <div class="form">  
+                <input value="03/01/2021"  type="date">
+              </div>
+        </div>
+        <div class="flexy">
+            <h4>Date To</h4>
+            <div class="form">
+                <input value="07/05/2021" type="date">
+              </div>
+        </div>        
+    </div>
+
+    <br/>
+    <div class="row header" fxLayoutAlign="end center">
+      <mat-card class="download">
+        <mat-icon>file_download</mat-icon>
+      </mat-card>
+    </div>
+
+    <div class="row header" fxLayoutAlign="space-between center">
+      <div class="title" fxFlex="10">
+        Source
+      </div>
+      <div class="title" fxFlex="8">
+       Date
+      </div>
+      <div class="title">
+        Run Hours(hrs)
+      </div>
+      <div class="title">
+        Fuel Consumed (L)
+      </div>
+      <div class="title">
+        Fuel/Hours (L/hrs)
+      </div>
+      <div class="title">
+        Options
+      </div>
+    </div>
+
+    <mat-card class="data" fxLayout="row" fxLayoutAlign="space-between center" *ngFor="let data of data" >
+      <div class="">
+       {{data.source}}
+      </div>
+      <div class="">
+        {{data.date}}
+      </div>
+      <div class="">
+       {{data.run_hours}}
+      </div>
+      <div class="">
+        {{data.fuel_consumed}}
+      </div>
+      <div class="">
+        {{data.fuel_per_hour}}
+      </div>
+      <div class="">
+        <mat-icon>more_vert</mat-icon>
+      </div>
+    
+    </mat-card>
+</div>
+
+<div class="row" fxLayoutAlign="end center">
+  <mat-card class="footer">
+    <div class="first">1</div>
+    <div class="second">5</div>
+  </mat-card>
+</div>
+

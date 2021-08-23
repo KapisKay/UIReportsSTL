@@ -1,0 +1,36 @@
+<mat-nav-list>
+    <div fxLayout="row" fxLayoutAlign="center center" class="main">
+        <h1 class="logo">GENMON</h1>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px" class="profile-card">
+        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Soufiane FADIL">
+        <div class="circle"></div>
+        <div class="header">
+            <h2>John Doe</h2>
+            <p>Administrator</p>
+        </div>
+    </div>
+
+    <a class="list" mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>dashboard</mat-icon>
+        Dashboard
+    </a>
+    <a class="list" mat-list-item routerLinkActive="list-item-active" routerLink="/reports">
+        <mat-icon>description</mat-icon>
+        Reports</a>
+    <a class="list" mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>people</mat-icon>
+        Users</a>
+
+   
+    <a class="list" mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>notifications</mat-icon>
+        Notifications
+    </a>
+
+    <a class="list" mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+        <mat-icon>settings</mat-icon>
+        Settings
+    </a>
+
+</mat-nav-list>
